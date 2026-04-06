@@ -1,0 +1,107 @@
+==========================================================================================
+EMBEDDING MODEL BENCHMARK COMPARISON
+==========================================================================================
+
+Model                     Top-1      Top-3      Avg Score    Embed(ms)    Search(ms)   LLM(ms)
+------------------------------------------------------------------------------------------
+nomic-embed-text          8/10 (80%) 8/10 (80%) 0.6981       29.93        382.54       1221.24
+mxbai-embed-large         7/10 (70%) 10/10 (100%) 0.6192       46.29        362.68       1378.89
+all-minilm                7/10 (70%) 10/10 (100%) 0.3972       17.34        373.98       1186.94
+snowflake-arctic-embed:110m 7/10 (70%) 10/10 (100%) 0.5663       22.68        364.28       1283.84
+==========================================================================================
+
+
+──────────────────────────────────────────────────────────────────────────────────────────
+MODEL: nomic-embed-text
+──────────────────────────────────────────────────────────────────────────────────────────
+  Top-1 Accuracy: 8/10 (80%)
+  Top-3 Accuracy: 8/10 (80%)
+  Avg Top-1 Score: 0.6981
+  Avg Embedding Latency: 29.93 ms
+  Avg Search Latency: 382.54 ms
+  Avg LLM Latency: 1221.24 ms
+
+  Query                                         Status   Score      Top Match
+  -------------------------------------------------------------------------------------
+  When can I visit the hospital?                MISS     0.7519     Is Wi-Fi available in the hospital?
+  Where can I park my car?                      HIT      0.6276     Is parking available at the hospital?
+  Do you accept insurance?                      HIT      0.7841     What insurance plans do you accept?
+  How do I get my test results?                 HIT      0.6709     How do I get my lab reports or test results?
+  Is there food available?                      HIT      0.6891     Is there a cafeteria or canteen?
+  What rooms do you have?                       HIT      0.6708     What are the room types and charges?
+  Can I do a video call with doctor?            MISS     0.6808     How do I get a referral or second opinion?
+  Where is the hospital?                        HIT      0.7285     What is the hospital name and where is it located?
+  I need an ambulance                           HIT      0.6904     Do you have ambulance services?
+  What should I carry for admission?            HIT      0.6871     What should I bring for a hospital admission?
+
+
+──────────────────────────────────────────────────────────────────────────────────────────
+MODEL: mxbai-embed-large
+──────────────────────────────────────────────────────────────────────────────────────────
+  Top-1 Accuracy: 7/10 (70%)
+  Top-3 Accuracy: 10/10 (100%)
+  Avg Top-1 Score: 0.6192
+  Avg Embedding Latency: 46.29 ms
+  Avg Search Latency: 362.68 ms
+  Avg LLM Latency: 1378.89 ms
+
+  Query                                         Status   Score      Top Match
+  -------------------------------------------------------------------------------------
+  When can I visit the hospital?                TOP3     0.6668     What are the emergency room hours?
+  Where can I park my car?                      HIT      0.5705     Is parking available at the hospital?
+  Do you accept insurance?                      TOP3     0.5587     Do you offer health check-up packages?
+  How do I get my test results?                 HIT      0.5831     How do I get my lab reports or test results?
+  Is there food available?                      HIT      0.5922     Is there a cafeteria or canteen?
+  What rooms do you have?                       TOP3     0.5406     Is there accommodation for patient attendants?
+  Can I do a video call with doctor?            HIT      0.6737     Do you offer teleconsultation or online appointments?
+  Where is the hospital?                        HIT      0.666      What is the hospital name and where is it located?
+  I need an ambulance                           HIT      0.6844     Do you have ambulance services?
+  What should I carry for admission?            HIT      0.6565     What should I bring for a hospital admission?
+
+
+──────────────────────────────────────────────────────────────────────────────────────────
+MODEL: all-minilm
+──────────────────────────────────────────────────────────────────────────────────────────
+  Top-1 Accuracy: 7/10 (70%)
+  Top-3 Accuracy: 10/10 (100%)
+  Avg Top-1 Score: 0.3972
+  Avg Embedding Latency: 17.34 ms
+  Avg Search Latency: 373.98 ms
+  Avg LLM Latency: 1186.94 ms
+
+  Query                                         Status   Score      Top Match
+  -------------------------------------------------------------------------------------
+  When can I visit the hospital?                HIT      0.5487     What are the visiting hours?
+  Where can I park my car?                      HIT      0.3193     Is parking available at the hospital?
+  Do you accept insurance?                      HIT      0.4971     What insurance plans do you accept?
+  How do I get my test results?                 HIT      0.4014     How do I get my lab reports or test results?
+  Is there food available?                      HIT      0.3264     Is there a cafeteria or canteen?
+  What rooms do you have?                       HIT      0.3506     What are the room types and charges?
+  Can I do a video call with doctor?            TOP3     0.3564     How do I access my medical records?
+  Where is the hospital?                        TOP3     0.461      How do I access the patient portal?
+  I need an ambulance                           TOP3     0.3744     How do I access my medical records?
+  What should I carry for admission?            HIT      0.3372     What should I bring for a hospital admission?
+
+
+──────────────────────────────────────────────────────────────────────────────────────────
+MODEL: snowflake-arctic-embed:110m
+──────────────────────────────────────────────────────────────────────────────────────────
+  Top-1 Accuracy: 7/10 (70%)
+  Top-3 Accuracy: 10/10 (100%)
+  Avg Top-1 Score: 0.5663
+  Avg Embedding Latency: 22.68 ms
+  Avg Search Latency: 364.28 ms
+  Avg LLM Latency: 1283.84 ms
+
+  Query                                         Status   Score      Top Match
+  -------------------------------------------------------------------------------------
+  When can I visit the hospital?                TOP3     0.6197     What is the visitor policy?
+  Where can I park my car?                      HIT      0.5327     Is parking available at the hospital?
+  Do you accept insurance?                      HIT      0.6115     What insurance plans do you accept?
+  How do I get my test results?                 HIT      0.6063     How do I get my lab reports or test results?
+  Is there food available?                      HIT      0.514      Is there a cafeteria or canteen?
+  What rooms do you have?                       TOP3     0.4666     What are the emergency room hours?
+  Can I do a video call with doctor?            HIT      0.574      Do you offer teleconsultation or online appointments?
+  Where is the hospital?                        TOP3     0.6252     What is the hospital phone number?
+  I need an ambulance                           HIT      0.4991     Do you have ambulance services?
+  What should I carry for admission?            HIT      0.6137     What should I bring for a hospital admission?

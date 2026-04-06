@@ -1,0 +1,1178 @@
+{
+  "nomic-embed-text": {
+    "model": "nomic-embed-text",
+    "total_queries": 10,
+    "correct_top1": 8,
+    "correct_top3": 8,
+    "avg_embedding_latency_ms": 29.93,
+    "avg_search_latency_ms": 382.54,
+    "avg_llm_latency_ms": 1221.24,
+    "avg_top1_score": 0.6981,
+    "queries": [
+      {
+        "query": "When can I visit the hospital?",
+        "expected": "What are the visiting hours?",
+        "in_top1": false,
+        "in_top3": false,
+        "top1_score": 0.7519,
+        "embedding_latency_ms": 80.53,
+        "search_latency_ms": 1247.83,
+        "llm_latency_ms": 807.67,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.75192076,
+            "question": "Is Wi-Fi available in the hospital?"
+          },
+          {
+            "rank": 2,
+            "score": 0.717100143,
+            "question": "How do I get to the hospital by public transport?"
+          },
+          {
+            "rank": 3,
+            "score": 0.693555772,
+            "question": "How do I access the patient portal?"
+          }
+        ],
+        "llm_response": "City General Hospital is open 24 hours a day, so you can visit whenever it's convenient for you.  \n"
+      },
+      {
+        "query": "Where can I park my car?",
+        "expected": "Is parking available at the hospital?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6276,
+        "embedding_latency_ms": 26.77,
+        "search_latency_ms": 274.77,
+        "llm_latency_ms": 1574.55,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.627552271,
+            "question": "Is parking available at the hospital?"
+          },
+          {
+            "rank": 2,
+            "score": 0.54499644,
+            "question": "Is Wi-Fi available in the hospital?"
+          },
+          {
+            "rank": 3,
+            "score": 0.524276853,
+            "question": "How do I get to the hospital by public transport?"
+          }
+        ],
+        "llm_response": "Yes, we have a multi-level parking facility with 500+ spaces. Parking is available for both two-wheelers and four-wheelers. The first 2 hours are free for patients and visitors. After that, parking is charged at Rs. 30 per hour. Valet parking is also available at the main entrance for Rs. 100.  \n"
+      },
+      {
+        "query": "Do you accept insurance?",
+        "expected": "What insurance plans do you accept?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.7841,
+        "embedding_latency_ms": 23.49,
+        "search_latency_ms": 260.94,
+        "llm_latency_ms": 1175.0,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.78414917,
+            "question": "What insurance plans do you accept?"
+          },
+          {
+            "rank": 2,
+            "score": 0.618434966,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 3,
+            "score": 0.598266602,
+            "question": "What should I bring for a hospital admission?"
+          }
+        ],
+        "llm_response": "Yes, we accept most major insurance providers including Star Health, ICICI Lombard, HDFC Ergo, New India Assurance, Bajaj Allianz, Max Bupa, and Religare Health. We also accept government schemes like Ayushman Bharat and CGHS. \n"
+      },
+      {
+        "query": "How do I get my test results?",
+        "expected": "How do I get my lab reports or test results?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6709,
+        "embedding_latency_ms": 24.9,
+        "search_latency_ms": 335.12,
+        "llm_latency_ms": 1330.66,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.67093128,
+            "question": "How do I get my lab reports or test results?"
+          },
+          {
+            "rank": 2,
+            "score": 0.623443723,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 3,
+            "score": 0.575533032,
+            "question": "Is Wi-Fi available in the hospital?"
+          }
+        ],
+        "llm_response": "Lab reports are typically available within 24-48 hours depending on the test. You can access them through our patient portal at portal.citygeneralhospital.in, or collect physical copies from the Lab Reports counter on the ground floor. Reports can also be sent to your registered email upon request. \n"
+      },
+      {
+        "query": "Is there food available?",
+        "expected": "Is there a cafeteria or canteen?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6891,
+        "embedding_latency_ms": 24.0,
+        "search_latency_ms": 282.45,
+        "llm_latency_ms": 1250.24,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.68913269,
+            "question": "Is there a cafeteria or canteen?"
+          },
+          {
+            "rank": 2,
+            "score": 0.662994564,
+            "question": "Is Wi-Fi available in the hospital?"
+          },
+          {
+            "rank": 3,
+            "score": 0.607135773,
+            "question": "What departments and specialties are available?"
+          }
+        ],
+        "llm_response": "Yes, our cafeteria is located on the 2nd floor and is open from 7:00 AM to 9:00 PM. We serve vegetarian and non-vegetarian meals, snacks, and beverages. Special dietary meals can be arranged for admitted patients through the nursing station. \n"
+      },
+      {
+        "query": "What rooms do you have?",
+        "expected": "What are the room types and charges?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6708,
+        "embedding_latency_ms": 23.99,
+        "search_latency_ms": 370.77,
+        "llm_latency_ms": 1378.57,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.670803249,
+            "question": "What are the room types and charges?"
+          },
+          {
+            "rank": 2,
+            "score": 0.640731871,
+            "question": "Is there accommodation for patient attendants?"
+          },
+          {
+            "rank": 3,
+            "score": 0.582596064,
+            "question": "Is Wi-Fi available in the hospital?"
+          }
+        ],
+        "llm_response": "We offer General Ward (Rs. 1,500/day), Semi-Private rooms (Rs. 3,500/day), Private rooms (Rs. 6,000/day), and Deluxe Suites (Rs. 10,000/day).  \n"
+      },
+      {
+        "query": "Can I do a video call with doctor?",
+        "expected": "Do you offer teleconsultation or online appointments?",
+        "in_top1": false,
+        "in_top3": false,
+        "top1_score": 0.6808,
+        "embedding_latency_ms": 25.19,
+        "search_latency_ms": 248.71,
+        "llm_latency_ms": 1078.44,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.680782318,
+            "question": "How do I get a referral or second opinion?"
+          },
+          {
+            "rank": 2,
+            "score": 0.652443051,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 3,
+            "score": 0.651994646,
+            "question": "How do I access my medical records?"
+          }
+        ],
+        "llm_response": "We offer consultations with our specialists directly through our appointment line at +91-80-2345-6789.  Please book a consultation to discuss your needs further. \n"
+      },
+      {
+        "query": "Where is the hospital?",
+        "expected": "What is the hospital name and where is it located?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.7285,
+        "embedding_latency_ms": 22.49,
+        "search_latency_ms": 284.25,
+        "llm_latency_ms": 985.67,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.728482962,
+            "question": "What is the hospital name and where is it located?"
+          },
+          {
+            "rank": 2,
+            "score": 0.720554411,
+            "question": "Is Wi-Fi available in the hospital?"
+          },
+          {
+            "rank": 3,
+            "score": 0.691690087,
+            "question": "Is there a pharmacy in the hospital?"
+          }
+        ],
+        "llm_response": "City General Hospital is located at 42 MG Road, Bengaluru, Karnataka 560001. We are near the MG Road Metro Station, making us easily accessible by public transport. \n"
+      },
+      {
+        "query": "I need an ambulance",
+        "expected": "Do you have ambulance services?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6904,
+        "embedding_latency_ms": 25.09,
+        "search_latency_ms": 253.87,
+        "llm_latency_ms": 1547.48,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.690433323,
+            "question": "Do you have ambulance services?"
+          },
+          {
+            "rank": 2,
+            "score": 0.61392206,
+            "question": "How do I get to the hospital by public transport?"
+          },
+          {
+            "rank": 3,
+            "score": 0.609825,
+            "question": "What is the hospital phone number?"
+          }
+        ],
+        "llm_response": "Yes, we operate a fleet of 10 ambulances including 4 Advanced Life Support (ALS) units. For ambulance services, call +91-80-2345-6700. Our ambulances cover all areas within a 30 km radius of the hospital. The average response time is 15-20 minutes within Bengaluru city limits. \n"
+      },
+      {
+        "query": "What should I carry for admission?",
+        "expected": "What should I bring for a hospital admission?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6871,
+        "embedding_latency_ms": 22.88,
+        "search_latency_ms": 266.65,
+        "llm_latency_ms": 1084.14,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.687114894,
+            "question": "What should I bring for a hospital admission?"
+          },
+          {
+            "rank": 2,
+            "score": 0.603924036,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 3,
+            "score": 0.601476669,
+            "question": "Do you have a blood bank?"
+          }
+        ],
+        "llm_response": "Please bring a valid government ID, your insurance card if applicable, any previous medical records and prescriptions, a list of current medications, comfortable clothing, and personal toiletries. The hospital provides bedding, towels, and meals. \n"
+      }
+    ],
+    "top1_accuracy": "8/10 (80%)",
+    "top3_accuracy": "8/10 (80%)"
+  },
+  "mxbai-embed-large": {
+    "model": "mxbai-embed-large",
+    "total_queries": 10,
+    "correct_top1": 7,
+    "correct_top3": 10,
+    "avg_embedding_latency_ms": 46.29,
+    "avg_search_latency_ms": 362.68,
+    "avg_llm_latency_ms": 1378.89,
+    "avg_top1_score": 0.6192,
+    "queries": [
+      {
+        "query": "When can I visit the hospital?",
+        "expected": "What are the visiting hours?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.6668,
+        "embedding_latency_ms": 72.61,
+        "search_latency_ms": 1074.71,
+        "llm_latency_ms": 2159.28,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.666768074,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 2,
+            "score": 0.654611588,
+            "question": "Is Wi-Fi available in the hospital?"
+          },
+          {
+            "rank": 3,
+            "score": 0.658587217,
+            "question": "What are the visiting hours?"
+          }
+        ],
+        "llm_response": "General visiting hours are 8:00 AM to 8:00 PM daily.  \n"
+      },
+      {
+        "query": "Where can I park my car?",
+        "expected": "Is parking available at the hospital?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.5705,
+        "embedding_latency_ms": 130.02,
+        "search_latency_ms": 282.89,
+        "llm_latency_ms": 1584.22,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.570525169,
+            "question": "Is parking available at the hospital?"
+          },
+          {
+            "rank": 2,
+            "score": 0.456477165,
+            "question": "How do I get to the hospital by public transport?"
+          },
+          {
+            "rank": 3,
+            "score": 0.429864973,
+            "question": "What is the hospital name and where is it located?"
+          }
+        ],
+        "llm_response": "Yes, we have a multi-level parking facility with over 500 spaces. Parking is available for both two-wheelers and four-wheelers. The first 2 hours are free for patients and visitors. After that, parking is charged at Rs. 30 per hour. Valet parking is also available at the main entrance for Rs. 100. \n"
+      },
+      {
+        "query": "Do you accept insurance?",
+        "expected": "What insurance plans do you accept?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.5587,
+        "embedding_latency_ms": 34.49,
+        "search_latency_ms": 292.96,
+        "llm_latency_ms": 1398.57,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.558656573,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 2,
+            "score": 0.543722034,
+            "question": "What should I bring for a hospital admission?"
+          },
+          {
+            "rank": 3,
+            "score": 0.699370205,
+            "question": "What insurance plans do you accept?"
+          }
+        ],
+        "llm_response": "Yes, we accept most major insurance providers including Star Health, ICICI Lombard, HDFC Ergo, New India Assurance, Bajaj Allianz, Max Bupa, and Religare Health. We also accept government schemes like Ayushman Bharat and CGHS.  Please bring your insurance card and a valid ID when visiting our hospital. \n"
+      },
+      {
+        "query": "How do I get my test results?",
+        "expected": "How do I get my lab reports or test results?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.5831,
+        "embedding_latency_ms": 31.67,
+        "search_latency_ms": 274.43,
+        "llm_latency_ms": 1328.22,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.583107,
+            "question": "How do I get my lab reports or test results?"
+          },
+          {
+            "rank": 2,
+            "score": 0.497759819,
+            "question": "How do I access my medical records?"
+          },
+          {
+            "rank": 3,
+            "score": 0.492504179,
+            "question": "How do I access the patient portal?"
+          }
+        ],
+        "llm_response": "Lab reports are typically available within 24-48 hours depending on the test. You can access them through our patient portal at portal.citygeneralhospital.in, or collect physical copies from the Lab Reports counter on the ground floor. Reports can also be sent to your registered email upon request. \n"
+      },
+      {
+        "query": "Is there food available?",
+        "expected": "Is there a cafeteria or canteen?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.5922,
+        "embedding_latency_ms": 32.74,
+        "search_latency_ms": 313.23,
+        "llm_latency_ms": 1033.75,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.592236519,
+            "question": "Is there a cafeteria or canteen?"
+          },
+          {
+            "rank": 2,
+            "score": 0.471387863,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.455395699,
+            "question": "Is there a pharmacy in the hospital?"
+          }
+        ],
+        "llm_response": "Yes, our cafeteria is located on the 2nd floor and is open from 7:00 AM to 9:00 PM. We serve vegetarian and non-vegetarian meals, snacks, and beverages. \n"
+      },
+      {
+        "query": "What rooms do you have?",
+        "expected": "What are the room types and charges?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.5406,
+        "embedding_latency_ms": 33.14,
+        "search_latency_ms": 276.31,
+        "llm_latency_ms": 1559.28,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.54060179,
+            "question": "Is there accommodation for patient attendants?"
+          },
+          {
+            "rank": 2,
+            "score": 0.504219055,
+            "question": "What are the room types and charges?"
+          },
+          {
+            "rank": 3,
+            "score": 0.49977392,
+            "question": "What are the emergency room hours?"
+          }
+        ],
+        "llm_response": "We offer General Ward (Rs. 1,500/day), Semi-Private rooms (Rs. 3,500/day), Private rooms (Rs. 6,000/day), and Deluxe Suites (Rs. 10,000/day). All rooms include meals, nursing care, and Wi-Fi.  \n"
+      },
+      {
+        "query": "Can I do a video call with doctor?",
+        "expected": "Do you offer teleconsultation or online appointments?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6737,
+        "embedding_latency_ms": 33.74,
+        "search_latency_ms": 273.67,
+        "llm_latency_ms": 996.97,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.673733056,
+            "question": "Do you offer teleconsultation or online appointments?"
+          },
+          {
+            "rank": 2,
+            "score": 0.619830668,
+            "question": "How do I get a referral or second opinion?"
+          },
+          {
+            "rank": 3,
+            "score": 0.541407,
+            "question": "How do I access the patient portal?"
+          }
+        ],
+        "llm_response": "Yes, we offer video consultations for follow-up visits and non-emergency consultations through our patient portal or the CityGeneral app.  Fees are the same as in-person OPD visits. \n"
+      },
+      {
+        "query": "Where is the hospital?",
+        "expected": "What is the hospital name and where is it located?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.666,
+        "embedding_latency_ms": 31.52,
+        "search_latency_ms": 279.51,
+        "llm_latency_ms": 981.79,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.666000605,
+            "question": "What is the hospital name and where is it located?"
+          },
+          {
+            "rank": 2,
+            "score": 0.663874745,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 3,
+            "score": 0.648072302,
+            "question": "How do I get to the hospital by public transport?"
+          }
+        ],
+        "llm_response": "City General Hospital is located at 42 MG Road, Bengaluru, Karnataka 560001. We are near the MG Road Metro Station, making us easily accessible by public transport. \n"
+      },
+      {
+        "query": "I need an ambulance",
+        "expected": "Do you have ambulance services?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6844,
+        "embedding_latency_ms": 31.29,
+        "search_latency_ms": 305.18,
+        "llm_latency_ms": 1557.57,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.684388578,
+            "question": "Do you have ambulance services?"
+          },
+          {
+            "rank": 2,
+            "score": 0.622486353,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.586733043,
+            "question": "What is the hospital phone number?"
+          }
+        ],
+        "llm_response": "Yes, we operate a fleet of 10 ambulances including 4 Advanced Life Support (ALS) units. For ambulance services, call +91-80-2345-6700. Our ambulances cover all areas within a 30 km radius of the hospital. The average response time is 15-20 minutes within Bengaluru city limits. \n"
+      },
+      {
+        "query": "What should I carry for admission?",
+        "expected": "What should I bring for a hospital admission?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6565,
+        "embedding_latency_ms": 31.73,
+        "search_latency_ms": 253.93,
+        "llm_latency_ms": 1189.22,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.656451225,
+            "question": "What should I bring for a hospital admission?"
+          },
+          {
+            "rank": 2,
+            "score": 0.533667564,
+            "question": "How do I access the patient portal?"
+          },
+          {
+            "rank": 3,
+            "score": 0.494120538,
+            "question": "How do I access my medical records?"
+          }
+        ],
+        "llm_response": "Please bring a valid government ID (Aadhaar, passport, or driving license), your insurance card if applicable, any previous medical records and prescriptions, a list of current medications, comfortable clothing, and personal toiletries. The hospital provides bedding, towels, and meals. \n"
+      }
+    ],
+    "top1_accuracy": "7/10 (70%)",
+    "top3_accuracy": "10/10 (100%)"
+  },
+  "all-minilm": {
+    "model": "all-minilm",
+    "total_queries": 10,
+    "correct_top1": 7,
+    "correct_top3": 10,
+    "avg_embedding_latency_ms": 17.34,
+    "avg_search_latency_ms": 373.98,
+    "avg_llm_latency_ms": 1186.94,
+    "avg_top1_score": 0.3972,
+    "queries": [
+      {
+        "query": "When can I visit the hospital?",
+        "expected": "What are the visiting hours?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.5487,
+        "embedding_latency_ms": 52.38,
+        "search_latency_ms": 1085.83,
+        "llm_latency_ms": 731.31,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.548654675,
+            "question": "What are the visiting hours?"
+          },
+          {
+            "rank": 2,
+            "score": 0.516393781,
+            "question": "What is the visitor policy?"
+          },
+          {
+            "rank": 3,
+            "score": 0.498659283,
+            "question": "How do I access my medical records?"
+          }
+        ],
+        "llm_response": "General visiting hours are 8:00 AM to 8:00 PM daily.  \n"
+      },
+      {
+        "query": "Where can I park my car?",
+        "expected": "Is parking available at the hospital?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.3193,
+        "embedding_latency_ms": 13.51,
+        "search_latency_ms": 255.14,
+        "llm_latency_ms": 1594.38,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.319336891,
+            "question": "Is parking available at the hospital?"
+          },
+          {
+            "rank": 2,
+            "score": 0.151564106,
+            "question": "What is the visitor policy?"
+          },
+          {
+            "rank": 3,
+            "score": 0.138875961,
+            "question": "What are the visiting hours?"
+          }
+        ],
+        "llm_response": "Yes, we have a multi-level parking facility with 500+ spaces. Parking is available for both two-wheelers and four-wheelers. The first 2 hours are free for patients and visitors. After that, parking is charged at Rs. 30 per hour. Valet parking is also available at the main entrance for Rs. 100. \n"
+      },
+      {
+        "query": "Do you accept insurance?",
+        "expected": "What insurance plans do you accept?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.4971,
+        "embedding_latency_ms": 13.25,
+        "search_latency_ms": 346.08,
+        "llm_latency_ms": 1313.74,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.497066528,
+            "question": "What insurance plans do you accept?"
+          },
+          {
+            "rank": 2,
+            "score": 0.347894728,
+            "question": "Do you offer teleconsultation or online appointments?"
+          },
+          {
+            "rank": 3,
+            "score": 0.330664635,
+            "question": "How do I access the patient portal?"
+          }
+        ],
+        "llm_response": "Yes, we accept many major insurance providers including Star Health, ICICI Lombard, HDFC Ergo, New India Assurance, Bajaj Allianz, Max Bupa, and Religare Health. We also accept government schemes like Ayushman Bharat and CGHS. Please bring your insurance card and a valid ID when visiting.  \n"
+      },
+      {
+        "query": "How do I get my test results?",
+        "expected": "How do I get my lab reports or test results?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.4014,
+        "embedding_latency_ms": 13.39,
+        "search_latency_ms": 308.62,
+        "llm_latency_ms": 1363.17,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.401370913,
+            "question": "How do I get my lab reports or test results?"
+          },
+          {
+            "rank": 2,
+            "score": 0.177035347,
+            "question": "How do I access my medical records?"
+          },
+          {
+            "rank": 3,
+            "score": 0.174485162,
+            "question": "How do I file a complaint or give feedback?"
+          }
+        ],
+        "llm_response": "Lab reports are typically available within 24-48 hours depending on the test. You can access them through our patient portal at portal.citygeneralhospital.in, or collect physical copies from the Lab Reports counter on the ground floor.  Reports can also be sent to your registered email upon request. \n"
+      },
+      {
+        "query": "Is there food available?",
+        "expected": "Is there a cafeteria or canteen?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.3264,
+        "embedding_latency_ms": 13.53,
+        "search_latency_ms": 262.02,
+        "llm_latency_ms": 1305.12,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.326374859,
+            "question": "Is there a cafeteria or canteen?"
+          },
+          {
+            "rank": 2,
+            "score": 0.189957589,
+            "question": "Do you offer health check-up packages?"
+          },
+          {
+            "rank": 3,
+            "score": 0.178621203,
+            "question": "How do I get my lab reports or test results?"
+          }
+        ],
+        "llm_response": "Yes, our cafeteria is located on the 2nd floor and is open from 7:00 AM to 9:00 PM. We serve vegetarian and non-vegetarian meals, snacks, and beverages. Special dietary meals can be arranged for admitted patients through the nursing station. \n"
+      },
+      {
+        "query": "What rooms do you have?",
+        "expected": "What are the room types and charges?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.3506,
+        "embedding_latency_ms": 13.5,
+        "search_latency_ms": 319.74,
+        "llm_latency_ms": 953.38,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.350639313,
+            "question": "What are the room types and charges?"
+          },
+          {
+            "rank": 2,
+            "score": 0.325261027,
+            "question": "Is there accommodation for patient attendants?"
+          },
+          {
+            "rank": 3,
+            "score": 0.28509137,
+            "question": "What is the visitor policy?"
+          }
+        ],
+        "llm_response": "We offer General Ward, Semi-Private rooms, Private rooms, and Deluxe Suites.  All of our room types include meals, nursing care, and Wi-Fi. \n"
+      },
+      {
+        "query": "Can I do a video call with doctor?",
+        "expected": "Do you offer teleconsultation or online appointments?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.3564,
+        "embedding_latency_ms": 13.25,
+        "search_latency_ms": 286.12,
+        "llm_latency_ms": 1004.6,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.356372863,
+            "question": "How do I access my medical records?"
+          },
+          {
+            "rank": 2,
+            "score": 0.320009142,
+            "question": "How do I file a complaint or give feedback?"
+          },
+          {
+            "rank": 3,
+            "score": 0.470626891,
+            "question": "Do you offer teleconsultation or online appointments?"
+          }
+        ],
+        "llm_response": "Yes, we offer video consultations through our patient portal or the CityGeneral app for follow-up visits and non-emergency consultations. Fees are the same as in-person OPD visits. \n"
+      },
+      {
+        "query": "Where is the hospital?",
+        "expected": "What is the hospital name and where is it located?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.461,
+        "embedding_latency_ms": 13.63,
+        "search_latency_ms": 288.25,
+        "llm_latency_ms": 973.64,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.460995555,
+            "question": "How do I access the patient portal?"
+          },
+          {
+            "rank": 2,
+            "score": 0.459233224,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 3,
+            "score": 0.457955241,
+            "question": "What is the hospital name and where is it located?"
+          }
+        ],
+        "llm_response": "City General Hospital is located at 42 MG Road, Bengaluru, Karnataka 560001. We are near the MG Road Metro Station, making us easily accessible by public transport. \n"
+      },
+      {
+        "query": "I need an ambulance",
+        "expected": "Do you have ambulance services?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.3744,
+        "embedding_latency_ms": 13.76,
+        "search_latency_ms": 284.74,
+        "llm_latency_ms": 1583.74,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.374381155,
+            "question": "How do I access my medical records?"
+          },
+          {
+            "rank": 2,
+            "score": 0.368542701,
+            "question": "Do you have ambulance services?"
+          },
+          {
+            "rank": 3,
+            "score": 0.350418597,
+            "question": "What is the hospital phone number?"
+          }
+        ],
+        "llm_response": "Yes, we operate a fleet of 10 ambulances including 4 Advanced Life Support (ALS) units. For ambulance services, call +91-80-2345-6700. Our ambulances cover all areas within a 30 km radius of the hospital. The average response time is 15-20 minutes within Bengaluru city limits. \n"
+      },
+      {
+        "query": "What should I carry for admission?",
+        "expected": "What should I bring for a hospital admission?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.3372,
+        "embedding_latency_ms": 13.24,
+        "search_latency_ms": 303.2,
+        "llm_latency_ms": 1046.33,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.337160081,
+            "question": "What should I bring for a hospital admission?"
+          },
+          {
+            "rank": 2,
+            "score": 0.222560897,
+            "question": "What are the visiting hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.210523576,
+            "question": "How do I access the patient portal?"
+          }
+        ],
+        "llm_response": "Please bring a valid government ID, your insurance card if applicable, any previous medical records and prescriptions, a list of current medications, comfortable clothing, and personal toiletries. The hospital provides bedding, towels, and meals. \n"
+      }
+    ],
+    "top1_accuracy": "7/10 (70%)",
+    "top3_accuracy": "10/10 (100%)"
+  },
+  "snowflake-arctic-embed:110m": {
+    "model": "snowflake-arctic-embed:110m",
+    "total_queries": 10,
+    "correct_top1": 7,
+    "correct_top3": 10,
+    "avg_embedding_latency_ms": 22.68,
+    "avg_search_latency_ms": 364.28,
+    "avg_llm_latency_ms": 1283.84,
+    "avg_top1_score": 0.5663,
+    "queries": [
+      {
+        "query": "When can I visit the hospital?",
+        "expected": "What are the visiting hours?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.6197,
+        "embedding_latency_ms": 61.84,
+        "search_latency_ms": 1026.55,
+        "llm_latency_ms": 1521.98,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.619664192,
+            "question": "What is the visitor policy?"
+          },
+          {
+            "rank": 2,
+            "score": 0.605079591,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.604369223,
+            "question": "What are the visiting hours?"
+          }
+        ],
+        "llm_response": "General visiting hours are 8:00 AM to 8:00 PM daily.  \n"
+      },
+      {
+        "query": "Where can I park my car?",
+        "expected": "Is parking available at the hospital?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.5327,
+        "embedding_latency_ms": 19.81,
+        "search_latency_ms": 325.39,
+        "llm_latency_ms": 1638.82,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.532707155,
+            "question": "Is parking available at the hospital?"
+          },
+          {
+            "rank": 2,
+            "score": 0.436831474,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 3,
+            "score": 0.413245291,
+            "question": "What COVID-19 protocols are in place?"
+          }
+        ],
+        "llm_response": "Yes, we have a multi-level parking facility with over 500 spaces. Parking is available for both two-wheelers and four-wheelers. The first two hours are free for patients and visitors. After that, parking is charged at Rs. 30 per hour. Valet parking is also available at the main entrance for Rs. 100. \n"
+      },
+      {
+        "query": "Do you accept insurance?",
+        "expected": "What insurance plans do you accept?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6115,
+        "embedding_latency_ms": 18.06,
+        "search_latency_ms": 288.0,
+        "llm_latency_ms": 1143.18,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.611469328,
+            "question": "What insurance plans do you accept?"
+          },
+          {
+            "rank": 2,
+            "score": 0.505028665,
+            "question": "What payment methods are accepted?"
+          },
+          {
+            "rank": 3,
+            "score": 0.458564758,
+            "question": "What are the emergency room hours?"
+          }
+        ],
+        "llm_response": "Yes, we accept most major insurance providers including Star Health, ICICI Lombard, HDFC Ergo, New India Assurance, Bajaj Allianz, Max Bupa, and Religare Health. We also accept government schemes like Ayushman Bharat and CGHS. \n"
+      },
+      {
+        "query": "How do I get my test results?",
+        "expected": "How do I get my lab reports or test results?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6063,
+        "embedding_latency_ms": 18.31,
+        "search_latency_ms": 284.34,
+        "llm_latency_ms": 1330.18,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.606335759,
+            "question": "How do I get my lab reports or test results?"
+          },
+          {
+            "rank": 2,
+            "score": 0.514781892,
+            "question": "How do I get a referral or second opinion?"
+          },
+          {
+            "rank": 3,
+            "score": 0.485854089,
+            "question": "What is the hospital phone number?"
+          }
+        ],
+        "llm_response": "Lab reports are typically available within 24-48 hours depending on the test. You can access them through our patient portal at portal.citygeneralhospital.in, or collect physical copies from the Lab Reports counter on the ground floor. Reports can also be sent to your registered email upon request. \n"
+      },
+      {
+        "query": "Is there food available?",
+        "expected": "Is there a cafeteria or canteen?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.514,
+        "embedding_latency_ms": 17.7,
+        "search_latency_ms": 277.62,
+        "llm_latency_ms": 1243.66,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.514036357,
+            "question": "Is there a cafeteria or canteen?"
+          },
+          {
+            "rank": 2,
+            "score": 0.458681136,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.44817844,
+            "question": "Is Wi-Fi available in the hospital?"
+          }
+        ],
+        "llm_response": "Yes, our cafeteria is located on the 2nd floor and is open from 7:00 AM to 9:00 PM. We serve vegetarian and non-vegetarian meals, snacks, and beverages. Special dietary meals can be arranged for admitted patients through the nursing station.  \n"
+      },
+      {
+        "query": "What rooms do you have?",
+        "expected": "What are the room types and charges?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.4666,
+        "embedding_latency_ms": 17.48,
+        "search_latency_ms": 276.22,
+        "llm_latency_ms": 1368.23,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.466565073,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 2,
+            "score": 0.4656744,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 3,
+            "score": 0.45978266,
+            "question": "What are the room types and charges?"
+          }
+        ],
+        "llm_response": "We offer General Ward (Rs. 1,500/day), Semi-Private rooms (Rs. 3,500/day), Private rooms (Rs. 6,000/day), and Deluxe Suites (Rs. 10,000/day). \n"
+      },
+      {
+        "query": "Can I do a video call with doctor?",
+        "expected": "Do you offer teleconsultation or online appointments?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.574,
+        "embedding_latency_ms": 19.18,
+        "search_latency_ms": 249.37,
+        "llm_latency_ms": 996.71,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.574018538,
+            "question": "Do you offer teleconsultation or online appointments?"
+          },
+          {
+            "rank": 2,
+            "score": 0.561532915,
+            "question": "How do I get a referral or second opinion?"
+          },
+          {
+            "rank": 3,
+            "score": 0.526902139,
+            "question": "What is the hospital phone number?"
+          }
+        ],
+        "llm_response": "Yes, we offer video consultations for follow-up visits and non-emergency consultations through our patient portal or the CityGeneral app.  Fees are the same as in-person OPD visits.  \n"
+      },
+      {
+        "query": "Where is the hospital?",
+        "expected": "What is the hospital name and where is it located?",
+        "in_top1": false,
+        "in_top3": true,
+        "top1_score": 0.6252,
+        "embedding_latency_ms": 18.32,
+        "search_latency_ms": 314.61,
+        "llm_latency_ms": 978.12,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.62522769,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 2,
+            "score": 0.546319723,
+            "question": "What are the emergency room hours?"
+          },
+          {
+            "rank": 3,
+            "score": 0.534418821,
+            "question": "What is the hospital name and where is it located?"
+          }
+        ],
+        "llm_response": "City General Hospital is located at 42 MG Road, Bengaluru, Karnataka 560001. We are near the MG Road Metro Station, making us easily accessible by public transport. \n"
+      },
+      {
+        "query": "I need an ambulance",
+        "expected": "Do you have ambulance services?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.4991,
+        "embedding_latency_ms": 17.71,
+        "search_latency_ms": 336.28,
+        "llm_latency_ms": 1561.73,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.499090016,
+            "question": "Do you have ambulance services?"
+          },
+          {
+            "rank": 2,
+            "score": 0.488046408,
+            "question": "What is the hospital phone number?"
+          },
+          {
+            "rank": 3,
+            "score": 0.479849517,
+            "question": "What are the emergency room hours?"
+          }
+        ],
+        "llm_response": "Yes, we operate a fleet of 10 ambulances including 4 Advanced Life Support (ALS) units. For ambulance services, call +91-80-2345-6700. Our ambulances cover all areas within a 30 km radius of the hospital. The average response time is 15-20 minutes within Bengaluru city limits. \n"
+      },
+      {
+        "query": "What should I carry for admission?",
+        "expected": "What should I bring for a hospital admission?",
+        "in_top1": true,
+        "in_top3": true,
+        "top1_score": 0.6137,
+        "embedding_latency_ms": 18.41,
+        "search_latency_ms": 264.41,
+        "llm_latency_ms": 1055.75,
+        "top_matches": [
+          {
+            "rank": 1,
+            "score": 0.613735735,
+            "question": "What should I bring for a hospital admission?"
+          },
+          {
+            "rank": 2,
+            "score": 0.463121504,
+            "question": "What COVID-19 protocols are in place?"
+          },
+          {
+            "rank": 3,
+            "score": 0.457368851,
+            "question": "What is the visitor policy?"
+          }
+        ],
+        "llm_response": "Please bring a valid government ID, your insurance card if applicable, any previous medical records and prescriptions, a list of current medications, comfortable clothing, and personal toiletries. The hospital provides bedding, towels, and meals. \n"
+      }
+    ],
+    "top1_accuracy": "7/10 (70%)",
+    "top3_accuracy": "10/10 (100%)"
+  }
+}
