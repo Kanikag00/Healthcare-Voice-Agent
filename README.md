@@ -75,14 +75,8 @@ cd Backend
 python Agents/FrontDesk_Agent/ingest.py
 ```
 
-# Embedding model comparison for FrontDesk RAG
-python Agents/FrontDesk_Agent/benchmark.py
-```
+## Backend/
 
-## Project Structure
-
-```
-Backend/
 ├── main_graph.py                        # LangGraph graph — entry point
 ├── state.py                             # AgentState TypedDict
 ├── database.py                          # Supabase client wrapper
