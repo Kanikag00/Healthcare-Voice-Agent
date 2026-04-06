@@ -77,6 +77,7 @@ python Agents/FrontDesk_Agent/ingest.py
 
 ## Backend/
 
+```
 ├── main_graph.py                        # LangGraph graph — entry point
 ├── state.py                             # AgentState TypedDict
 ├── database.py                          # Supabase client wrapper
@@ -100,7 +101,8 @@ python Agents/FrontDesk_Agent/ingest.py
 ├── conversation_test.py
 ├── test_client.py
 └── requirements.txt
-
+```
+```
 voice/
 ├── voice_loop.py   # Main voice loop (record → STT → graph → TTS)
 ├── stt.py          # WhisperSTT (faster-whisper, turbo model)
