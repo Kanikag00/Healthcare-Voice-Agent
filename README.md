@@ -2,7 +2,7 @@
 
 An AI-powered voice agent for hospital call handling. Patients call in and speak naturally — the agent routes their request, handles the full multi-turn conversation, and responds with synthesized speech.
 
-## Architecture (V2 — LangGraph)
+## Architecture (LangGraph)
 
 ```
 voice/voice_loop.py          ← voice entry point (mic → STT → graph → TTS)
